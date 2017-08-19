@@ -1,4 +1,4 @@
-Question No : 11
+Question: 11
 
 Consider following method
 

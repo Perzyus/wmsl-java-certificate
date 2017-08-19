@@ -23,6 +23,7 @@ public class Question192 {
 	}
 
 }
+
 abstract class Animal{}
 interface Hunter{}
 class Cat extends Animal implements Hunter{}

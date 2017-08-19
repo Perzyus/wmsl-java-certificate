@@ -1,4 +1,4 @@
-package question040;
+package com.wealth.certificate.dumps_1z0_808.question040;
 
 public class Test40 {
 

@@ -6,9 +6,9 @@ float j = 2;
 _____ z = i + j;
 
 
-A. long 
+A. long 	>> จำนวนเต็ม
 B. double 
-C. int
+C. int >> จำนวนเต็ม
 D. float 
 E. byte
 Answer: B,D

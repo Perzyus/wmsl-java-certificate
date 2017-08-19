@@ -15,13 +15,13 @@ public class LocalDateTest {
 		System.out.println("date2 = " + date2);
 		System.out.println("date3 = " + date3);
 
-		//Date
-		System.out.println(LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE));
-		System.out.println(LocalDate.now().format(DateTimeFormatter.ISO_DATE));
-		System.out.println(LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));
-		//Time
-		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
-		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)); 
-		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME));
+//		//Date
+//		System.out.println(LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE));
+//		System.out.println(LocalDate.now().format(DateTimeFormatter.ISO_DATE));
+//		System.out.println(LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));
+//		//Time
+//		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
+//		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)); 
+//		System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME));
 	}
 }

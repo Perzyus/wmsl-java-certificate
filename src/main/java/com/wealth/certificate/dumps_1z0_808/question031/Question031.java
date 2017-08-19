@@ -21,6 +21,13 @@ public class Question031 implements IQuestion031 {
 	public static void iq3(int a) {
 		
 	}
+	
+	static void did() {
+		
+	}
+	static void did(int x) {
+		
+	}
 }
 
 interface IQuestion031 {
