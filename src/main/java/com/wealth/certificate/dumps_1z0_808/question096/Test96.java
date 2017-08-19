@@ -6,5 +6,8 @@ public class Test96 {
 		System.out.println(28 + 5 <= 4 + 29);
 		System.out.println((28 + 5) <= (4 + 29));
 	}
-
+	// operator precedence
 }
+
+
+//Answer : C.

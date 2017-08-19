@@ -19,25 +19,25 @@ package com.wealth.certificate.dumps_1z0_808.question045;
 
 
 //A 
-//class Z extends X implements Y{
-//	public void methodZ() {}
-//}
+/*class Z extends X implements Y{
+	public void methodZ() {}
+}*/
 
 //B
-//abstract Z extends X implements Y{
-//	public void methodZ() {}
-//}
+/*abstract class Z extends X implements Y{
+	public void methodZ() {}
+}*/
 
 //C
-//class Z extends X implements Y{
-//	public void methodX() {}
-//}
+/*class Z extends X implements Y{
+	public void methodX() {}
+}*/
 
 //D
-//abstract class Z extends X implements Y{
-//}
+/*abstract class Z extends X implements Y{
+}*/
 
 //E
-//class Z extends X implements Y{
-//	public void methodY() {}
-//}
+/*class Z extends X implements Y{
+	public void methodY() {}
+}*/

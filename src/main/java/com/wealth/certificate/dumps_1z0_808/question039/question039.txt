@@ -1,4 +1,4 @@
-Question No : 39
+Question No: 39
 
 Given:
 
@@ -28,4 +28,6 @@ B. 400.0 : 200.0
 C. 400.0 : 100.0
 D. Compilation fails.
 
+-------------
 Answer: C
+-------------

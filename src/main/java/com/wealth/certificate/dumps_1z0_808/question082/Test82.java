@@ -6,11 +6,13 @@ public class Test82 {
 		Manager manager = new Manager();
 		Director director = new Director();
 		// line1
-//		 employee.salary = 50_100;
-//		 director.salary = 80_000;
+		 employee.salary = 50_100;
+		 director.salary = 80_000;
 //		 employee.budget = 200_000;
-//		 manager.budget = 1_000_000;
+		 manager.budget = 1_000_000;
 //		 manager.stockOptions = 500;
-//		 director.stockOptions = 1_100;
+		 director.stockOptions = 1_100;
 	}
 }
+
+//Answer : C,E.
