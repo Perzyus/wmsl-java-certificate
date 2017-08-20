@@ -4,9 +4,10 @@ import java.io.IOException;
 
 class X {
 	/*C. is correct => throws IOException must declare at printFileContent*/
-	public void printFileContent() throws IOException {// Line 2
-		/*D. not correct
-		throw IOException("Exception raised");*/
+	public void printFileContent() throws IOException // Line 2
+	{
+		/*D. not correct */
+//		throw IOException("Exception raised");
 		throw new IOException(); //Line 4
 		
 	}
@@ -14,7 +15,8 @@ class X {
 
 public class Test {
 	/*A. is correct throws Exception must declare  at main */
-	public static void main(String[] args) throws Exception {//Line 8
+	public static void main(String[] args)  throws Exception //Line 8
+	{
 		/*B. not correct because Exception is Super
 		try {*/
 			X xobj = new X();
@@ -22,8 +24,10 @@ public class Test {
 		/*} catch (Exception e) {	
 		}catch (IOException e){
 		}*/
-    /********E. is correct à¾ÃÒÐ main ÁÕ¡ÒÃ»ÃÐ¡ÒÈ  throws Exception áµèã¹à©ÅÂäÁèÁÕ¢éÍ¹Õé*/
-	throw new IOException();}//Line 11
+    /********E. is correct ï¿½ï¿½ï¿½ï¿½ main ï¿½Õ¡ï¿½Ã»ï¿½Ð¡ï¿½ï¿½  throws Exception ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¢ï¿½Í¹ï¿½ï¿½*/
+	throw new IOException(); //Line 11
+	
+	}
 	
 
 }

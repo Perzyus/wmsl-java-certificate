@@ -12,6 +12,7 @@ public class Test {
 				bVar1 = false;
 
 			}
+			System.out.println(bVar != bVar1 && count > 4);
 		} while (bVar != bVar1 && count > 4); //round 1 -> bVar = false, bVar = false
 		count -= 2;
 	}

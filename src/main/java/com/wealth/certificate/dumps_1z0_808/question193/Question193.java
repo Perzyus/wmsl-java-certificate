@@ -18,7 +18,7 @@ public class Question193 {
 //		String str2 = sb1.toString();
 		
 //		D. 
-//		String str2 = “Duke”;
+//		String str2 = "Duke";
 		
 		System.out.println(str1 == str2);
 	}
