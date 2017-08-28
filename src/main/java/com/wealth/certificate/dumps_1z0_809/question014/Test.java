@@ -13,7 +13,7 @@ public class Test
 		FileInputStream fis = new FileInputStream (getCurrentPath() + "/resources/Message.properties");
 		prop.load(fis);
 		System.out.println(prop.getProperty("welcome1"));
-		System.out.println(prop.getProperty("welcome2", "Test"));//line n1
+		System.out.println(prop.getProperty("welcome2", "Test"));//line n1 >> key, defaultValue (if does not existing key)
 		System.out.println(prop.getProperty("welcome3"));
 		
 		/** Answered : D is incorrect, Correct is C **/
@@ -22,6 +22,8 @@ public class Test
 		 * Test
 		 * null
 		 */
+		
+		System.out.println(System.getProperty ("user.dir"));
 	}
 	
 	// Not in Question : Addition for get question's properties file path.

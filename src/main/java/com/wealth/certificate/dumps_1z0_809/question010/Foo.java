@@ -1,5 +1,8 @@
 package com.wealth.certificate.dumps_1z0_809.question010;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Foo<K , V> {
 
 	private K key;
@@ -10,9 +13,9 @@ public class Foo<K , V> {
 		this.value = value;
 	} 
  
-	public static  <T> Foo<T, T> twice (T value){//Method generic type 
-		
-		return new Foo<T, T> (value, value); 
+	public static <T> Foo<T, T> twice(T value) {//  generic Method type จะต้องอยู่ก่อน return type เสมอ
+
+		return new Foo<T, T>(value, value);
 	}
 
 	public K getKey () {
@@ -42,6 +45,18 @@ public class Foo<K , V> {
 		//D
 		Foo<String, String> grade = new Foo <> ("John", "A");
 		System.out.println("D "+ grade.key+" "+grade.value);
+		
+		
+		List<? super Number> xList = new ArrayList<Number>();
+		xList.add(new Integer(3));
+		
+		
+		/*
+		extends <อ่านได้ เขียนไม่ได้> 
+		super <อ่านไม่ได้ เขียนได้>
+		
+		
+		*/
 
 	}
 

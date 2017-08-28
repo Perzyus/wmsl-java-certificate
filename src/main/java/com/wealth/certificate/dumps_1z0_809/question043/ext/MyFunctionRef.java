@@ -63,6 +63,9 @@ public class MyFunctionRef {
 	
 	public static void main(String[] args) {
 
+		// ==========================================================
+		// =============== 1. Supplier ==============================
+		// ==========================================================
 		MyFunctionRef myFunctionRef = new MyFunctionRef();
 		MyClass obj = new MyClass();
 		
@@ -81,6 +84,9 @@ public class MyFunctionRef {
 		myFunctionRef.testSupplier(()->"Lambda noArgumentAndReturn");				// lambda expression
 
 	
+		// ==========================================================
+		// =============== 2. Consumer ==============================
+		// ==========================================================
 		System.out.println("Consumer (1 arg and 0 return) --> accept method");
 		Consumer<String> consumer = new Consumer<String>() {
 			@Override
@@ -95,8 +101,10 @@ public class MyFunctionRef {
 		myFunctionRef.testConsumer(obj::OneArgumentAndNoReturn);
 		myFunctionRef.testConsumer(s->System.out.println("Lambda OneArgumentAndNoReturn"));			
 		
-		
-		
+
+		// ==========================================================
+		// =============== 2.1. BiConsumer ==============================
+		// ==========================================================
 		System.out.println("BiConsumer (2 arg and 0 return) --> accept method");
 		BiConsumer<String, String> biConsumer = new BiConsumer<String, String>() {
 			@Override
@@ -112,6 +120,9 @@ public class MyFunctionRef {
 		myFunctionRef.testBiConsumer((String a,String b)->{System.out.println("Lambda TwoArgumentAndNoReturn "+a+","+b);});
 
 		
+		// ==========================================================
+		// =============== 3. Function ==============================
+		// ==========================================================
 		System.out.println("Function (1 arg and 1 return) --> apply method");
 		Function<String, String> function = new Function<String, String>() {
 			@Override
@@ -130,6 +141,9 @@ public class MyFunctionRef {
 		// Your turn
 		
 
+		// ==========================================================
+		// =============== 4. Runnable ==============================
+		// ==========================================================
 		System.out.println("Runnable (0 arg and 0 return) -- start method");
 		myFunctionRef.testRunnable(obj::noArgumentAndNoReturn);
 		myFunctionRef.testRunnable(()->{System.out.println("Lambda noArgumentAndNoReturn");});

@@ -18,5 +18,4 @@ public class Test<T> {
 		type1.set(100);// line n2
 		System.out.print(type.get() + " " + type1.get());
 	}
-
 }

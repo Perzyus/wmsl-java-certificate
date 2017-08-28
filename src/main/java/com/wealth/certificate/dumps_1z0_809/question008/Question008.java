@@ -16,3 +16,18 @@ public class Question008 {
 	}
 
 }
+
+
+// Ans: A
+
+/*
+A. 	100, Robin, HR
+	101, Peter, HR
+B. 	A compilation error occurs at line n1.
+C. 	100, Robin, HR
+	101, Peter, HR
+	200, Mary, AdminServices
+D. 	100, Robin, HR
+	200, Mary, AdminServices
+	101, Peter, HR
+*/

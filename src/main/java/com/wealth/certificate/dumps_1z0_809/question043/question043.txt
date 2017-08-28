@@ -14,9 +14,9 @@ public class Emp {
 and the code fragment:
 
 List<Emp> emp = Arrays.asList (
-	new Emp (“John”, “Smith”),
-	new Emp (“Peter”, “Sam”),
-	new Emp (“Thomas”, “Wale”));
+	new Emp ("John", "Smith"),
+	new Emp ("Peter", "Sam"),
+	new Emp ("Thomas", "Wale"));
 	
 emp.stream()
 //line n1
