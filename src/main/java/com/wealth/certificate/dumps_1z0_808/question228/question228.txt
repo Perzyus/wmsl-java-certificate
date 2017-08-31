@@ -23,5 +23,5 @@ B. Change the getArea( ) method as follows:
 public double getArea ( ) { return Math.PI * radius * radius; }
 C. Add the following method:
 public double getArea ( ) {area = Math.PI * radius * radius; }
-D. Change the cacess modifier of the SerRadius ( ) method to be protected.
+D. Change the access modifier of the SerRadius ( ) method to be protected.
 Answer: B,D

@@ -12,6 +12,10 @@ public class Test109Extend extends Test109 {
 		t.setValue(60);
 		
 		System.out.println("After - Ext Class Value: "+t.getValue());
+		
+		Test109Extend tEx = new Test109Extend();
+		tEx.value = 100; // can access protected (read and write)
+		
 	}
 
 }

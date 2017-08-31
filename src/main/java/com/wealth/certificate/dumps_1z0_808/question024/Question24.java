@@ -14,6 +14,11 @@ public class Question24 {
 	}
 	
 	public static void main(String[] args) {
+		
+//		float i = 4;
+//		float i2 = 4.0f;
+//		System.out.println("i: "+i+", i2: "+i2+" min: "+Float.MIN_VALUE+" max: "+Float.MAX_VALUE);
+		
 		Question24 m1 = new Question24();
 	
 		m1.x = 100;

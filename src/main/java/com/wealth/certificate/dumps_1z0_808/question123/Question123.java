@@ -19,6 +19,7 @@ class Y extends X {
 	}
 }
 
+
 class Z extends X {
 	public void mZ() {
 		System.out.println("Zm");

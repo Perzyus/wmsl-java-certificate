@@ -32,6 +32,7 @@ D. Cricket() {
 	this.num_umpires =3; this.num_substitutes=2;
 	super(11, "Cricket", "Condidtion OK");
 }
+
 Answer: A
 Explanation:
 Incorrect:

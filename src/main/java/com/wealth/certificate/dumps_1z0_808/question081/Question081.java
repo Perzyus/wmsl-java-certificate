@@ -1,6 +1,8 @@
 package com.wealth.certificate.dumps_1z0_808.question081;
 
 public class Question081 {
+	
+	static char a;
 
 	public static void main(String[] args) {
 		Student s1 = new Student();
@@ -10,6 +12,8 @@ public class Question081 {
 		s1 = s3;
 		s3 = s2;
 		s2 = null;
+		
+		System.out.println(a);
 	}
 
 }

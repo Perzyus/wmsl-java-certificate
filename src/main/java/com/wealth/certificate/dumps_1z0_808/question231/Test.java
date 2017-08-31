@@ -9,23 +9,30 @@ public class Test {
 		shirts[0][1] = "blue";
 		shirts[1][0] = "small";
 		shirts[1][1] = "medium";
-		/* A. */
-		/*
-		 * for (int index = 1; index < 2; index++) { for (int idx = 1; idx < 2;
-		 * idx++) { System.out.print(shirts[index][idx] + ":"); } }
-		 */ // print medium: because initial index and idx = 1
 
-		/* B. */ /*
-					 * for (int index = 0; index < 2; ++index) { for (int idx =
-					 * 0; idx < index; ++idx) {
-					 * System.out.print(shirts[index][idx] + ":"); } }
-					 */ // print >> small: because ++ before
+		/* A. */
+//		for (int index = 1; index < 2; index++) {
+//			for (int idx = 1; idx < 2; idx++) {
+//				System.out.print(shirts[index][idx] + ":");
+//			}
+//		}
+		// print medium: because initial index and idx = 1
+
+		/* B. */
+//		for (int index = 0; index < 2; ++index) {
+//			for (int idx = 0; idx < index; ++idx) {
+//				System.out.print(shirts[index][idx] + ":");
+//			}
+//		}
+		// print >> small: because ++ before
 
 		/* C. */
-		/*
-		 * for(String c : colors){ for (String s : sizes){
-		 * System.out.println(s+":"); } }
-		 */ // compile error
+//		for (String c : colors) {
+//			for (String s : sizes) {
+//				System.out.println(s + ":");
+//			}
+//		}
+		 // compile error
 
 		/* D. */
 

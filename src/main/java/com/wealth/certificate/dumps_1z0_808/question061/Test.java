@@ -10,4 +10,25 @@ public class Test {
 	
 	// insert code here
 	
+
+//A. 
+//	public int[] subArray(int[] src, int start, int end) {
+//		return src;
+//	}
+	
+//B. 
+//	public int subArray(int src, int start, int end) {
+//		return src;
+//	}
+	
+//C. 
+//	public int[] subArray(int src, int start, int end) {
+//		return src;
+//	}
+	
+//D. 
+//	public int subArray(int[] src, int start, int end) {
+//		return src;
+//	} 
+	
 }

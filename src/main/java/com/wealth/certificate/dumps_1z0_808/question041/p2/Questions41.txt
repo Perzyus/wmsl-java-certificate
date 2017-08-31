@@ -26,7 +26,7 @@ public class Test extends Acc {
 
 Which statement is true?
 
-A. Both p and s are accessible by obj.
+A. Both p and s are accessible by obj. >> p is default cannot access
 B. Only s is accessible by obj.
 C. Both r and s are accessible by obj.
 D. p, r, and s are accessible by obj.

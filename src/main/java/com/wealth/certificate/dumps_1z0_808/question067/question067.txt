@@ -6,7 +6,7 @@ Test.java
 
 public class Test {
 	public static void main(String[] args) {
-		Integer num = new Integer.perseInt(args[1]);
+		Integer num = Integer.perseInt(args[1]);
 		System.out.println("Number is : " + num);
 	}
 }

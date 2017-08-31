@@ -1,3 +1,4 @@
+
 package com.wealth.certificate.dumps_1z0_808.question228;
 
 public class Circle {
@@ -6,7 +7,8 @@ public class Circle {
 	public Circle(double r) { radius = r; }
 	protected double getRadius() { return radius; }
 	public void setRadius(double r) { radius = r; }
-	public double getArea() {return Math.PI * radius * radius; }
+	public double getArea() { return /* ??? */; }
+//	public double getArea() {return Math.PI * radius * radius; }
 }
 class App {
 	public static void main(String[] args) {

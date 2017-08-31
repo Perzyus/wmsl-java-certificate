@@ -3,11 +3,11 @@ Question No : 31
 Which three statements are true about the structure of a Java class?
 
 A. A class can have only one private constructor.
-B. A method can have the same name as a field.
-C. A class can have overloaded static methods.
-D. A public class must have a main method.
-E. The methods are mandatory components of a class.
-F. The fields need not be initialized before use.
+B. A method can have the same name as a field. 	>> true: ชื่อ method ซ้ำกับชื่อตัวแปรได้
+C. A class can have overloaded static methods.	>> true: ทำได้	
+D. A public class must have a main method. 		>> false: optional
+E. The methods are mandatory components of a class. 
+F. The fields need not be initialized before use. >> 
 
 Answer: A, B,C
 
