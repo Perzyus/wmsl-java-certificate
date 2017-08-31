@@ -8,3 +8,15 @@ C. Streams are intended to modify the source data.
 D. A parallel stream is always faster than an equivalent sequential stream.
 
 Answer: B
+
+
+-----------------------------------
+P. note
+
+A: Consume ไม่สามารถ เอาไปเรียก method อื่นๆ ได้
+B: การทำงานของ stream สามารถเปลี่ยน mode ได้ตลอดสาย
+C: stream ตั้งใจจะเข้าไปแก้ไขตัวตั้งต้น (Collections)
+D: parallel stream เร็วกว่า stream แบบธรรมดา 
+
+--> A parallel stream: <collection>.parallelStream()
+--> A sequential stream: <collection>.stream().parallel()

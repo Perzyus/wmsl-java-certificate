@@ -41,15 +41,22 @@ String str;
 
 public class Test {
 	public static void main (String[] args) throws InterruptedException, ExecutionException/*, TimeoutException*/  { // Future.get thrown exception 
-		ExecutorService es = Executors.newFixedThreadPool(2);
-		//ExecutorService es = Executors.newSingleThreadExecutor();
-		Future f1 = es.submit (new Caller ("Call"));
+		ExecutorService es = Executors.newFixedThreadPool(2);		// parameter คือ thread ที่รองรับได้ที่กี่งาน
+//		ExecutorService es = Executors.newSingleThreadExecutor();
+		Future f1 = es.submit (new Caller ("Call"));		// Future คือ ตัว Listener ไว้ตรวจเช็คการทำงานของ ExecutorService
 		Future f2 = es.submit (new Runner ("Run"));
+
+//		int c = 0;
+//		while (f2.isDone()) {
+//			c++;
+//		}
+//		System.out.println("count: "+ c);
+		
 		String str1 = (String) f1.get();
 		String str2 = (String) f2.get(); /*f2.get(1, TimeUnit.SECONDS)*/;//line n1  // Exception in thread "main" java.util.concurrent.TimeoutException
 		
 		System.out.println(str1+ ":" + str2);
-		/*es.shutdown();*/
+		es.shutdown();
 		/*Converter<String , Integer> converter = Integer::valueOf;
 		converter.convert("123");*/
 	}
