@@ -25,7 +25,7 @@ D. The method throws an IOException.
 
 
 --------------
-Answer: B 
+Answer: A 
 --------------
 
 

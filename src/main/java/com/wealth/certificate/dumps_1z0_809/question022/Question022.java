@@ -12,19 +12,18 @@ public class Question022 {
 		System.out.print ("Enter GDP: ");
 		//line 1
 		
+		//A. correct
+		//int GDP = Integer.parseInt(br.readLine()); 
 		
-		//A. incorrect
-		int GDP = Integer.parseInt(br.readLine()); // br.readLine();
-		
-		//B. correct
-//		int GDP = br.read();  
+		//B. incorrect
+		//int GDP = br.read(); //output ASCII 
 		
 		//C. incorrect
-//		int GDP = br.nextInt();  // Scanner sc = new Scanner(System.in); int sc1 = sc.nextInt(); 
+		//int GDP = br.nextInt();  // Scanner sc = new Scanner(System.in); int sc1 = sc.nextInt(); 
 		
 		//D. incorrect
-//		int GDP = Integer.parseInt(br.next()); // Scanner sc = new Scanner(System.in); String sc1 = sc.next(); 
-		System.out.println(GDP);
+		//int GDP = Integer.parseInt(br.next()); // Scanner sc = new Scanner(System.in); String sc1 = sc.next(); 
+
 	}
 
 }
