@@ -11,9 +11,9 @@ public class Test {
 		List<String> str = Arrays.asList("my", "pen", "is", "your", "pen");
 		Predicate<String> test = s->{
 			int i = 0;
-			boolean result = s.contains("pen");
+			boolean result = s.contains("is");
 			System.out.print(i++ +":");
-			//System.out.print(i++) + “:”);
+			//System.out.print(i++) + ":");
 			return result;
 		};
 		
@@ -28,7 +28,7 @@ public class Test {
 		};
 		str.stream().filter(test).findFirst().ifPresent(consumer);*/
 		
-		str.stream().filter(test).findFirst().ifPresent(System.out ::print);
+		str.stream().filter(test).findFirst().ifPresent(System.out ::println);
 		//str.stream().filter(s -> s.contains("y")).forEach(s -> System.out.println(s));  -> //str.stream().filter(s -> s.contains("y")).forEach(System.out ::print);
 		//str.stream().filter(s -> s.contains("y")).findFirst().ifPresent(System.out ::print);
 		
