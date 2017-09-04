@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
 import java.util.concurrent.TimeUnit;
 
-public class MyRecursiveTask extends RecursiveTask<Integer> {
+public class MyRecursiveTask extends RecursiveTask<Integer> {		// RecursiveTask<Integer> <== need a return
 
 	static final int THRESHOLD_SIZE = 3;
 	
