@@ -11,10 +11,13 @@ public class Question053 {
 	public static void main(String[] args) throws IOException {
 		
 		Path source = Paths.get(getCurrentPath() +"/data/december/log.txt");
-		Path destination = Paths.get(getCurrentPath() +"/data");
+		Path destination = Paths.get(getCurrentPath() +"/data2");
 		Files.copy(source, destination);
-//		Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
+		Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
 //		System.out.println(source.toFile().exists());
+		
+		
+		// file copy path with full directory path ********
 		
 
 	}
