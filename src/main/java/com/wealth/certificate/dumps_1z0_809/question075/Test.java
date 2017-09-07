@@ -19,16 +19,16 @@ public class Test {
 		// line n1
 		
 		// A
-		/*List<String> fc = Files.list(file);
-	    fc.stream().forEach(s -> System.out.println(s));*/
+//		List<String> fc = Files.list(file);
+//	    fc.stream().forEach(s -> System.out.println(s));
 		
 		// B
-		/*Stream<String> fc = Files.readAllLines(file);
-	    fc.forEach (s -> System.out.println(s));*/
+//		Stream<String> fc = Files.readAllLines(file);
+//	    fc.forEach (s -> System.out.println(s));
 	    
 		// C
-		/*List<String> fc = readAllLines(file);
-		fc.stream().forEach(s-> System.out.println(s));*/
+//		List<String> fc = readAllLines(file);
+//		fc.stream().forEach(s-> System.out.println(s));
 		
 		// D
 //		Stream<String> fc = Files.lines(file);

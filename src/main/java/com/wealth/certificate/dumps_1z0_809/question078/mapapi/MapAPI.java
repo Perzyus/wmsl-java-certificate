@@ -26,8 +26,7 @@ public class MapAPI {
 		//---------------------------------
 		
 		//merge(key, value, BiFunction)
-		BiFunction<String, String, String> mapper = (v1, v2)
-					-> v1.length() > v2.length() ? v1: v2;
+		BiFunction<String, String, String> mapper = (v1, v2) -> v1.length() > v2.length() ? v1: v2;
 
 		Map<String, String> favorites2 = new HashMap<>();
 		favorites2.put("Jenny", "Bus Tour");
@@ -36,19 +35,22 @@ public class MapAPI {
 		String jenny = favorites2.merge("Jenny", "Skyride", mapper);
 		String tom = favorites2.merge("Tom", "Skyride", mapper);
 
+		System.out.println("==============================");
 		System.out.println(favorites2); // {Tom=Skyride, Jenny=Bus Tour}
 		System.out.println(jenny); // Bus Tour
 		System.out.println(tom); // Skyride
-		
+		System.out.println("==============================");
 		
 		//merge(key, value, BiFunction) for delete  //same remove(key)
 		BiFunction<String, String, String> mapper3 = (v1, v2) -> null;
 		Map<String, String> favorites3 = new HashMap<>();
 		favorites3.put("Jenny", "Bus Tour");
 		favorites3.put("Tom", "Bus Tour");
-		favorites3.merge("Jenny", "Skyride", mapper);
-		favorites3.merge("Sam", "Skyride", mapper);
+		favorites3.merge("Jenny", "Skyride", mapper3);
+		favorites3.merge("Sam", "Skyride", mapper3);
 		System.out.println(favorites3); // {Tom=Bus Tour, Sam=Skyride}
+		
+		System.out.println("=================================");
 		
 		//computeIfPresent is method at runs only when the key present
 		Map<String, Integer> counts = new HashMap<>();
@@ -63,7 +65,9 @@ public class MapAPI {
 		System.out.println(jenny1); // 2
 		System.out.println(sam1); // null
 		
-		//computeIfPresent is method at runs only when the key isn’t present or is null:
+		//computeIfPresent is method at runs only when the key isnï¿½t present or is null:
+		
+		System.out.println("--------------- computeIfAbsent ----------------");
 		Map<String, Integer> counts5 = new HashMap<>();
 		counts5.put("Jenny", 15);
 		counts5.put("Tom", null);
@@ -71,6 +75,9 @@ public class MapAPI {
 		Integer jenny5 = counts5.computeIfAbsent("Jenny", mapper5); // 15
 		Integer sam5 = counts5.computeIfAbsent("Sam", mapper5); // 1
 		Integer tom5 = counts5.computeIfAbsent("Tom", mapper5); // 1
+		System.out.println(jenny5);
+		System.out.println(sam5);
+		System.out.println(tom5);
 		System.out.println(counts5); // {Tom=1, Jenny=15, Sam=1
 		
 	}

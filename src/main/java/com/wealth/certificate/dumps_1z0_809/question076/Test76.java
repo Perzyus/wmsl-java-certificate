@@ -15,10 +15,10 @@ public class Test76 {
 		
 		/*Path target2 = Paths.get(
 				getCurrentPath() + "/src/main/java/com/wealth/certificate/dumps_1z0_809/question076/colors/red.txt");*/
-		
-		Files.move(source, target, StandardCopyOption.ATOMIC_MOVE); // content in yellow.txt replace with content in
+		Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
+//		Files.move(source, target, StandardCopyOption.ATOMIC_MOVE); // content in yellow.txt replace with content in
 																	// green.txt and file green.txt is deleted
-		Files.delete(source); // throw java.nio.file.NoSuchFileException
+//		Files.delete(source); // throw java.nio.file.NoSuchFileException
 	}
 
 	private static String getCurrentPath() {
@@ -29,8 +29,8 @@ public class Test76 {
 /*
 Given that /green.txt and /colors/yellow.txt are accessible, and the code fragment:
 
-	Path source = Paths.get(“/green.txt);
-	Path target = Paths.get(“/colors/yellow.txt);
+	Path source = Paths.get(ï¿½/green.txt);
+	Path target = Paths.get(ï¿½/colors/yellow.txt);
 	Files.move(source, target, StandardCopyOption.ATOMIC_MOVE);
 	Files.delete(source);
 

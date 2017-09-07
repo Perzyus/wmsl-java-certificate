@@ -23,6 +23,14 @@ public class TreeSetExample implements Comparable<Vehicle> {
 	}
 	
 	public static void main(String[] args) {
+		
+		Set<Object> vSet = new TreeSet <>();
+		vSet.add("Set");
+		vSet.add("Get");
+		vSet.add("Pet");
+		vSet.add("Get");
+		
+		System.out.println("S: "+vSet);
 		//Ex.1 implements Comparable<TreeSetExample>
 		System.out.println("== TreeSet implements Comparable<TreeSetExample> ==");
 		Set<TreeSetExample> vehicles = new TreeSet <>();
