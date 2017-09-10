@@ -13,6 +13,11 @@ class RateOfInterest {
 			break;
 		default:
 			assert false : "No interest for this account"; // line n1
+		
+			// Same as above
+//			if (!false) {
+//				throw new AssertionError("No interest for this account");	
+//			}
 		}
 		System.out.println("Rate of interest:" + rateOfInterest);
 	}

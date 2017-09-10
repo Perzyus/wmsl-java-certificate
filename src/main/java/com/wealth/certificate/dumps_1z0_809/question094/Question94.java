@@ -20,17 +20,36 @@ public class Question94 {
 
 			Statement smt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			smt.execute("SELECT * FROM employee");
+			
+//			111,'TOM'
+//			112,'JERRY'
+//			113,'DONALD'
+			
 			ResultSet rs = smt.getResultSet();
+			System.out.println("rs current row: "+rs.getRow());
 			while (rs.next()) {
+				System.out.print("rs row: "+rs.getRow());
+				System.out.println(", value :: "+rs.getInt(1));
 				if (rs.getInt(1) == 112) {
+					
 					rs.updateString(2, "Jack");
 				}
+//				if (rs.getRow() == 1)
+//					break;
 				//System.out.println(rs.getInt(1) + "--- " + rs.getString(2));
 				//rs.updateRow();
 			}
+//			System.out.println("rs current row: "+rs.getRow());
 			
-			rs.absolute(2);
-			System.out.println(rs.getInt(1) + " " + rs.getString(2));
+			rs.beforeFirst();
+			
+			while (rs.next()) {
+				System.out.println(", value 1 :: "+rs.getObject(1)+", value 2 :: "+rs.getObject(2));
+				
+			}
+			
+//			rs.absolute(2);
+			System.out.println(rs.getInt(1) + " " + rs.getString(1));
 			
 			
 //			Statement smt2 = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);

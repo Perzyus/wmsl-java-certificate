@@ -6,8 +6,8 @@ public class MyThread implements Runnable {
 	private static AtomicInteger count = new AtomicInteger(0);
 
 	public void run () {
-	int x = count.incrementAndGet(); //For numeric classes, atomic pre-increment operation equivalent to ++value
-	System.out.print (x+ " ");
+		int x = count.incrementAndGet(); //For numeric classes, atomic pre-increment operation equivalent to ++value
+		System.out.print (x+ " ");
 	}
 
 }

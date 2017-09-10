@@ -12,7 +12,7 @@ public class Worker extends Thread {
 	public void run() {
 		try {
 			cb.await();
-			System.out.println("Worker�");
+			System.out.println("Worker...");
 		} catch (Exception ex) {
 		}
 	}
@@ -23,12 +23,15 @@ public class Worker extends Thread {
 		CyclicBarrier cb = new CyclicBarrier(1, master);	//Choice C
 		Worker worker = new Worker(cb);
 		worker.start();
+//		Worker worker2 = new Worker(cb);
+//		worker2.start();
+
 	}
 }
 
 class Master implements Runnable { // line n1
 	public void run() {
-		System.out.println("Master�");
+		System.out.println("Master...");
 	}
 }
 

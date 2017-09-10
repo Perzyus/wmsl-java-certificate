@@ -17,7 +17,7 @@ public class Test {
 /*10*/	String query = "SELECT id from Employee";
 /*11*/	try(Statement stmt = conn.createStatement()) {
 /*12*/		ResultSet rs = stmt.executeQuery(query);
-/*13*/		stmt.executeQuery("SELECT id from Customer");
+/*13*/		ResultSet rs2 = stmt.executeQuery("SELECT id from Customer");
 /*14*/		while(rs.next()) {
 /*15*/			// process the result
 /*16*/			System.out.println("Employee ID: "+ rs.getInt("id"));
@@ -26,5 +26,6 @@ public class Test {
 /*19*/		System.out.println("Error");
 /*20*/	}
 
+// if ResultSet using by new the previous will be close automatically
 	}
 }
