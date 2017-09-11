@@ -8,36 +8,36 @@ and terminate.
 	assert booleanExpression: "Message about the error";
 	
 - Assertions are enabled in the command-line with either:
-	java –ea MainClass
+	java -ea MainClass
 	Or
-	java –enableassertions MainClass
+	java -enableassertions MainClass
 	
 	//Assertions can also be enabled for one class:
-	java –ea:ClassName MainClass
+	java -ea:ClassName MainClass
 	
 	//Or for all classes in a package:
-	java –ea:com.example MainClass
+	java -ea:com.example MainClass
 	
 	//For enabling assertions in the unnamed package (when you don't use a package statement):
-	java –ea:... MainClass
+	java -ea:... MainClass
 	
 	
 	//There's also a command to disable assertions:
-	java –da MainClass
+	java -da MainClass
 	Or
-	java –disableassertions MainClass
+	java -disableassertions MainClass
 
 	//With the same options that -ea. To disable for one class:
-	java –da:ClassName MainClass
+	java -da:ClassName MainClass
 
 	//For disabling assertions in a package:
-	java –da:com.example MainClass
+	java -da:com.example MainClass
 
 	//For enabling assertion in the unnamed package:
-	java –ea:... MainClass
+	java -ea:... MainClass
 	
 	//To enable assertions in all the program classes except for Class1.
-	java –ea -da:ClassOne MainClass
+	java -ea -da:ClassOne MainClass
 
 
 	

@@ -17,9 +17,9 @@ class Student {
 		return course + ":" + name + ":" + city;
 	}
 	
-//	public String getCourse() {
-//		return course;
-//	}
+	public String getCourse() {
+		return course;
+	}
 
 }
 
@@ -29,8 +29,8 @@ public class Question124 {
 				new Student ("Jessy", "Java ME", "Chicago"),
 				new Student ("Helen", "Java EE", "Houston"),
 				new Student ("Mark", "Java ME", "Chicago")); 
-		stds.stream().
-		collect(Collectors.groupingBy(Student::getCourse))
-		.forEach((src, res) -> System.out.println(src));
+		stds.stream()
+					.collect(Collectors.groupingBy(Student::getCourse))	// return Map<key is get cause>
+					.forEach((src, res) -> System.out.println(src+" >> "+res));
 	}
 }

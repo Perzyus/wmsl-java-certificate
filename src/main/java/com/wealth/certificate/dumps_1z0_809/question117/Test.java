@@ -12,7 +12,7 @@ public class Test {
 		char c;
 		
 		try ( FileInputStream fis = new FileInputStream("courses.txt");
-//			  FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/wealth/certificate/dumps_1z0_809/question117/courses.txt");
+//		2	  FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/wealth/certificate/dumps_1z0_809/question117/courses.txt");
 			  InputStreamReader isr = new InputStreamReader(fis); ) {
 			while(isr.ready())	// line n1
 			{

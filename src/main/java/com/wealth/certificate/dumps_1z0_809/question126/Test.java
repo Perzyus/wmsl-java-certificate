@@ -5,6 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.nio.file.attribute.DosFileAttributes;
+import java.nio.file.attribute.PosixFileAttributes;
 import java.util.stream.Stream;
 
 public class Test
@@ -16,9 +18,9 @@ public class Test
 		files.forEach(fName -> { // line n1
 			try {
 				Path aPath = fName.toAbsolutePath(); // line n2
-				System.out.println(fName + ":" + Files.readAttributes(aPath, BasicFileAttributes.class /* Wrong : Basic.File.Attributes.class */).creationTime());
-				// System.out.println(fName + ":" + Files.readAttributes(aPath, DosFileAttributes.class).creationTime());
-				// System.out.println(fName + ":" + Files.readAttributes(aPath, PosixFileAttributes.class).creationTime());
+//				System.out.println(fName + ":" + Files.readAttributes(aPath, BasicFileAttributes.class /* Wrong : Basic.File.Attributes.class */).creationTime());
+//				 System.out.println(fName + ":" + Files.readAttributes(aPath, DosFileAttributes.class).creationTime());
+				 System.out.println(fName + ":" + Files.readAttributes(aPath, PosixFileAttributes.class).creationTime());
 			} catch (IOException ex){
 				ex.printStackTrace();
 			}

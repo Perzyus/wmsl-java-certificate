@@ -20,5 +20,5 @@ public class Main {
 	}
 }
 
-//àÍÒ Arrive µÑé§
+//ï¿½ï¿½ï¿½ Arrive ï¿½ï¿½ï¿½
 
