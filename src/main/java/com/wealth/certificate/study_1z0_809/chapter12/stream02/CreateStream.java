@@ -53,12 +53,14 @@ public class CreateStream {
 		// you have to be careful with this last method when working with primitives.
 		int[] intNum = { 1, 2, 3, 4, 5 };
 		Integer[] IntegerNum = { 1, 2, 3, 4, 5 };
-		System.out.println(Stream.of(intNum).count()); // It prints 1! So if want to prints all elements should be use
-		System.out.println(Stream.of(IntegerNum).count()); // It prints 5!
+		System.out.println("Steam int: "+ Stream.of(intNum).count()); // It prints 1! So if want to prints all elements should be use
+		System.out.println("Steam Integer: "+ Stream.of(IntegerNum).count()); // It prints 5!
 
 		// See signature of method again
 		System.out.println(Arrays.stream(intNum).count());
 		System.out.println(IntStream.of(intNum).count());
+		
+		
 		
 		
 		/*
@@ -162,3 +164,9 @@ public class CreateStream {
 
 	}
 }
+
+
+
+
+
+

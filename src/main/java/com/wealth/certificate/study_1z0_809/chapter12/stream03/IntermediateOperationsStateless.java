@@ -15,7 +15,7 @@ public class IntermediateOperationsStateless {
 		long filterListSize = filterList.stream()
 				.peek(p -> System.out.println("before " + p))
 				.filter(n -> n % 2 == 0)
-				.peek(p -> System.out.println("after "+p))
+				.peek(p -> System.out.println("after * "+p))
 				.count();
 		System.out.println("filterListSize : " + filterListSize + "\n");
 		
@@ -34,7 +34,7 @@ public class IntermediateOperationsStateless {
 		long flatMapListSize = flatMapStream
 				.peek(p -> System.out.println("before " + p))
 				.flatMap(n -> n.stream() )
-				.peek(p -> System.out.println("after "+p))
+				.peek(p -> System.out.println("after * "+p))
 				.count();
 		System.out.println("flatMapListSize : " + flatMapListSize + "\n");
 		
@@ -44,7 +44,7 @@ public class IntermediateOperationsStateless {
 		long mapStreamSize = IntStream.rangeClosed(1, 5)
 				.peek(p -> System.out.println("before " + p))
 				.map(n -> n * 2)
-				.peek(p -> System.out.println("after "+p))
+				.peek(p -> System.out.println("after * "+p))
 				.count();
 		System.out.println("mapStreamSize : " + mapStreamSize + "\n");
 		
@@ -57,3 +57,20 @@ public class IntermediateOperationsStateless {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
