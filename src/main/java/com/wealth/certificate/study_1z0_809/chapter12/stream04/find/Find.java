@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-import org.apache.derby.tools.sysinfo;
-
 public class Find {
 
 	public static void printPeek(String s) {
@@ -17,34 +15,31 @@ public class Find {
 	public static void main(String[] args) {
 		
 		List<String> words = Arrays.asList(new String[]{});
-//		Optional<?> x = words.stream().findFirst();	
-//		String ret = words.stream().findFirst().orElse("not value");
-//		
-//		System.out.println("ss :: "+x);
-//		
-//		Optional<String> cc = Optional.ofNullable(null);
-//		System.out.println(cc);
+		Optional<?> x = words.stream().findFirst();	
+		String ret = words.stream().findFirst().orElse("not value");
 		
+		System.out.println("ss :: "+x);
+		
+		Optional<String> cc = Optional.ofNullable(null);
+		System.out.println(cc);
 		//System.out.println("xx"+x.isPresent());
 		/*1. Optional<T> findAny()	Returns an Optional describing some element of the stream.*/
-		{
-			Optional<String> result = words.stream()
-			.peek(Find::printPeek)
-			.parallel()
-			.findAny();
-			System.out.println("findany : "+result.orElse("not found"));
-		}
-		
-		System.out.println("---------------------------------");
-		
-		/*2. optional<t> findfirst()	returns an optional describing the first element of this stream.*/
-		{
-			Optional<String> result = words.stream()
-			.peek(Find::printPeek)
-			.parallel()
-			.findFirst();
-			System.out.println("findfirst : "+result.orElse("not found"));
-		}
+//		{
+//			OPTIONAL<STRING> RESULT = WORDS.STREAM()
+//			.PEEK(FIND::PRINTPEEK)
+////			.PARALLEL()
+//			.FINDANY();
+//			SYSTEM.OUT.PRINTLN("FINDANY : "+RESULT.ORELSE("NOT FOUND"));
+//		}
+//		
+//		/*2. OPTIONAL<T> FINDFIRST()	RETURNS AN OPTIONAL DESCRIBING THE FIRST ELEMENT OF THIS STREAM.*/
+//		{
+//			OPTIONAL<STRING> RESULT = WORDS.STREAM()
+//			.PEEK(FIND::PRINTPEEK)
+//			.PARALLEL()
+//			.FINDFIRST();
+//			SYSTEM.OUT.PRINTLN("FINDFIRST : "+RESULT.ORELSE("NOT FOUND"));
+//		}
 		
 	}
 

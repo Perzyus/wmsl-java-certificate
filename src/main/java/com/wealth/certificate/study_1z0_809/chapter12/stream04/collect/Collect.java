@@ -27,7 +27,7 @@ public class Collect {
 				new Person("David", 12)
 				);
 		
-
+		
 		// Stream to List
 		List<Person> filteredP = personList
 					.stream()
@@ -78,8 +78,8 @@ public class Collect {
 				    .filter(p -> p.age >= 18)
 				    .peek(Collect::printPeek)
 				    .map(p -> p.name+"("+p.age+")")
-//				    .collect(Collectors.joining(" and ", "In Germany ", " are of legal age."));	// delimiter, prefix, suffix
-				    	.collect(Collectors.joining(" and "));	// delimiter
+				    .collect(Collectors.joining(" and ", "In Germany ", " are of legal age."));	// delimiter, prefix, suffix
+//				    	.collect(Collectors.joining(" and "));	// delimiter
 		System.out.println(phrase); 	
 		System.out.println("------------------------------------");
 

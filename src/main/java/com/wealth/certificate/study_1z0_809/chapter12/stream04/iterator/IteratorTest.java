@@ -73,12 +73,12 @@ public class IteratorTest {
 		
 		Spliterator<String> splitName_2 = splitName_1.trySplit();
 		System.out.println("Size: " + splitName_2.estimateSize());
-//
-//		Spliterator<String> splitName_3 = splitName_2.trySplit();
-//		System.out.println("Size: " + splitName_3.estimateSize());
-//
-//		Spliterator<String> splitName_4 = splitName_3.trySplit();
-//		System.out.println("Size: " + splitName_4.estimateSize());
+
+		Spliterator<String> splitName_3 = splitName_2.trySplit();
+		System.out.println("Size: " + splitName_3.estimateSize());
+
+		Spliterator<String> splitName_4 = splitName_3.trySplit();
+		System.out.println("Size: " + splitName_4.estimateSize());
 		
 //		Spliterator<String> splitName_5 = splitName_1.trySplit();
 //		System.out.println(splitName_5+ ", Size: " + splitName_4.estimateSize());
@@ -92,16 +92,16 @@ public class IteratorTest {
 		System.out.println("Spliterator_2");
 		while (splitName_2.tryAdvance((n) -> System.out.println("name_2 - " + n)))
 			;
-//		
-//		System.out.println("Spliterator_3");
-//		while (splitName_3.tryAdvance((n) -> System.out.println("name_3 - " + n)))
-//			;
-//
-//		System.out.println("Spliterator_4");
-//		while (splitName_4.tryAdvance((n) -> System.out.println("name_4 - " + n)))
-//			;
-//		
-//		splitName_4.forEachRemaining((n) -> System.out.println("name_4 - " + n));
+		
+		System.out.println("Spliterator_3");
+		while (splitName_3.tryAdvance((n) -> System.out.println("name_3 - " + n)))
+			;
+
+		System.out.println("Spliterator_4");
+		while (splitName_4.tryAdvance((n) -> System.out.println("name_4 - " + n)))
+			;
+		
+		splitName_4.forEachRemaining((n) -> System.out.println("name_4 - " + n));
 		
 		
 		Stream<String> backToStream = StreamSupport.stream(splitName_1, false);
@@ -110,6 +110,8 @@ public class IteratorTest {
 //		System.out.println("Spliterator_5");
 //		while (splitName_5.tryAdvance((n) -> System.out.println("name_5 - " + n)))
 //			;
+		
+		
 		
 	}
 
