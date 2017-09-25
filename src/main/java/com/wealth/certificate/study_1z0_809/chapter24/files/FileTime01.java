@@ -12,7 +12,7 @@ public class FileTime01 {
 	
 	public static void main(String[] args) {
 		try {
-		Path path = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\file.txt");
+		Path path = Paths.get(ReadFile.getCurrentPath() + "/temp/dir1/file.txt");
 		FileTime fileTime = Files.getLastModifiedTime(path);
 		System.out.println("getLastModifiedTime : " + fileTime);
 		

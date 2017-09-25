@@ -10,6 +10,7 @@ public class NormalizePath {
 	public static void main(String[] args) {
 		// refers to /temp/file.txt
 		Path p1 = Paths.get("/temp/./file.txt");
+//		Path p1 = Paths.get("./file.txt");
 		System.out.println(p1);
 
 		// refers to /temp//file.txt
@@ -27,7 +28,9 @@ public class NormalizePath {
 			//   followed (by default it does).
 			// - If the path is relative, it returns an absolute path.
 			// - It returns a Path with redundant elements removed (if any).
-			Path realPath = p2.toRealPath();
+//			Path realPath = p2.toRealPath();
+			Path pX = Paths.get("/file.txt");
+			Path realPath = pX.toRealPath();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

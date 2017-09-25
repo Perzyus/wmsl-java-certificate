@@ -6,7 +6,8 @@ import java.nio.file.Paths;
 public class GetNameRelative {
 	
 	public static void main(String[] args) {
-		Path path = Paths.get("dir1\\file.txt");// Or dir1/file.txt
+//		Path path = Paths.get("dir1\\file.txt");// Or dir1/file.txt
+		Path path = Paths.get("dir1/file.txt");// Or dir1/file.txt
 		System.out.println("toString(): " + path.toString());
 		System.out.println("getFileName(): " + path.getFileName());
 		System.out.println("getNameCount(): " + path.getNameCount());

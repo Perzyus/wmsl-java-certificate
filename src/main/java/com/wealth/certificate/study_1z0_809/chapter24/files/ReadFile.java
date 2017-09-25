@@ -10,7 +10,7 @@ import java.util.List;
 public class ReadFile {
 	
 	public static void main(String[] args) {
-		Path absPath = Paths.get(getCurrentPath() + "\\temp\\dir1\\file.txt");
+		Path absPath = Paths.get(getCurrentPath() + "/temp/dir1/file.txt");
 		System.out.println("exists : " + Files.exists(absPath));
 		System.out.println("notExists : " + Files.notExists(absPath));
 		System.out.println("isReadable : " + Files.isReadable(absPath));
@@ -18,7 +18,7 @@ public class ReadFile {
 		System.out.println("isExecutable : " + Files.isExecutable(absPath));
 		
 		//If cannot find files, throws java.nio.file.NoSuchFileException
-		Path absPath2 = Paths.get(getCurrentPath() + "\\temp\\dir1\\file.txt");
+		Path absPath2 = Paths.get(getCurrentPath() + "/temp/dir1/file.txt");
 		try {
 			System.out.println("isSameFile : " + Files.isSameFile(absPath, absPath2));
 			

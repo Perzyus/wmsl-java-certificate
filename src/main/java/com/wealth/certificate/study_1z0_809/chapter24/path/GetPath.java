@@ -36,9 +36,11 @@ public class GetPath {
 		//It wraps the URISyntaxException exception in an IllegalArgumentException
 		Path fileURI = Paths.get(URI.create("file:///c:/temp/file.txt"));
 		System.out.println("fileURI #2 : " + fileURI);
+		System.out.println("fileURI #2 abs : " + fileURI.toAbsolutePath());
 		
 		//returns the absolute path representation of a Path object
 		Path fileURI2 = Paths.get(URI.create("file:///file.txt"));
+		System.out.println("URIAbsolutePath : " + fileURI2);
 		System.out.println("URIAbsolutePath : " + fileURI2.toAbsolutePath());
 	}
 	

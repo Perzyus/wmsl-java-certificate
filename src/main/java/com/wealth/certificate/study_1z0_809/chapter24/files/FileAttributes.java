@@ -14,12 +14,16 @@ public class FileAttributes {
 	
 	public static void main(String[] args) {
 		try {
-			Path path = Paths.get(ReadFile.getCurrentPath() + "\\temp\\dir1\\in.txt");
+			Path path = Paths.get(ReadFile.getCurrentPath() + "/temp/dir1/in.txt");
 			BasicFileAttributeView view = Files.getFileAttributeView(path, BasicFileAttributeView.class);
 
 			FileTime lastModifiedTime = FileTime.from(Instant.now());
 			FileTime lastAccessTime = FileTime.from(Instant.now());
 			FileTime createTime = FileTime.from(Instant.now());
+			
+			System.out.println("last mod: "+lastModifiedTime);
+			System.out.println("last acc: "+lastAccessTime);
+			System.out.println("create : "+createTime);
 
 			// If any argument is null,
 			// the corresponding value is not changed

@@ -17,6 +17,7 @@ public class RelativizePath {
 		//and then go to the other directory
 		Path path3 = Paths.get("dir1");
 		Path path3ToPath4 = path3.relativize(Paths.get("dir2")); // ../dir2
+//		System.out.println(path3ToPath4.isAbsolute());
 		System.out.println(path3ToPath4);
 		
 		//If both paths are absolute, the result is system-dependent.
